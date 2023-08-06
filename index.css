@@ -1,0 +1,121 @@
+.container img{
+    height: 90px;
+    width: 90px;
+    border-radius: 96px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(140deg, #87acfa 20%, #e171fa 100%);
+    color: #faf8fa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.cloud-pic{
+    width: 200%;
+    height: 149px;
+    margin: -50px auto;
+    background: url('css/cloud-pic-removebg-preview-removebg-preview.png');
+    background-size: 394px 173px;
+    background-repeat: no-repeat;
+    background-position: 120% 0px;
+    animation:cloud 10s linear infinite;
+}
+    
+
+@keyframes cloud{
+    from {background-position:0 0;
+    }
+
+    to {background-position:-2122 0;
+    }
+}
+
+.foot{
+    width: 180%;
+    height: 144px;
+    margin-top: -100px;
+    background: url('css/fish-removebg-preview.png') no-repeat;
+    background-size: 373px 173px;
+    background-position-y: 100px ;
+    background-position: 120% 0px;
+    animation:cloud 9s linear infinite;
+}
+
+header{ 
+    height: -13px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+
+.share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.container{
+    width: 91%;
+    max-width: 680px;
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+
+.title {
+    width: 50%;
+    height: 56px;
+    background: linear-gradient(140deg, #ef6af6 20%, #71b1fa 100%);
+    margin: 7px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-share-button{
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(245, 239, 239);
+}
+
+.title-share-button svg{
+    margin-right: 10px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+.title:hover{
+    transition: cubic-bezier(.07,1.41,.82,1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+.icon{
+    width: 44px;
+    margin: 4px 8px;
+    height: 44px;
+}
+.icon svg{
+    width: 29px;
+    height: 44px;
+}
